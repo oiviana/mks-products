@@ -1,10 +1,11 @@
 import Products from "@/components/Products";
 import variables from "./styles/variables.module.scss";
+import Header from "@/components/Header";
 export default function Home() {
   return (
     <>
-      <h2 className={variables.test}>oi</h2>
-      <Products/>
+      <Header />
+      <Products />
     </>
   );
 }
