@@ -1,3 +1,25 @@
-.test{
-    color: red;
-}
+$mainBlue: #0F52BA;
+$mainWhite: #FFFFFF;
+$secondaryWhite: #EEEEEE;
+$mainBlack:#000000;
+$secondaryBlack:#373737;
+$tercearyBlack:#2C2C2C;
+
+
+$text-xs: 0.625rem; //10px
+$text-sm: 0.875rem; //14px
+$text-base: 1rem; //16px
+$text-lg: 1.25rem; //20px
+$text-xl: 1.75rem; //28px
+$text-2xl: 2.5rem; //40px
+
+
+$leading-xs: 0.75rem; //12px
+$leading-sm: 1.125rem; //18px
+$leading-base: 1.18rem; //20px
+
+//breakpoints
+$phone: 640px;
+$tablet: 768px;
+$large: 1024px;
+$xlarge: 1280px;
