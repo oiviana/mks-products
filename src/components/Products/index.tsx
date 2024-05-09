@@ -1,6 +1,8 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/services/getProducts";
+import ProductCard from "./ProductCard";
+import styles from "./styles.module.scss"
 
 export default function Products() {
 
@@ -9,15 +11,22 @@ export default function Products() {
   if (isLoading) return <div>Carregando...</div>;
 
   if (error) return <div>Error: {error.message}</div>;
-  console.log(data)
+
   return (
-    <div>
-    <h1>Product List</h1>
-    <ul>
+    <div className={styles.productsGrid}>
       {data?.data?.products.map((product) => (
-        <li key={product.id}>{product.name}</li>
+          <ProductCard 
+          key={product.id}
+          name={product.name}
+          brand={product.brand}
+          description={product.description}
+          createdAt={product.createdAt}
+          updatedAt={product.updatedAt}
+          id={product.id}
+          photo={product.photo}
+          price={product.price}
+          />
       ))}
-    </ul>
   </div>
   );
 }

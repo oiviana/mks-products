@@ -7,7 +7,6 @@ export default function Cart(){
  
     
   const { isCartOpen, closeCart } = useCart();
-  console.log(isCartOpen)
 
     return(
         <div className={`${styles.cartWrapper} ${isCartOpen? styles.open : styles.close} `}>

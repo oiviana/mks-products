@@ -1,0 +1,79 @@
+@import './src/app/styles/variables.module.scss';
+
+.productsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    max-width: 58.625rem;
+    margin: calc((100vh - 650px) / 2) auto;
+
+    @media only screen and (min-width: 460px) {
+        grid-template-columns: 1fr 1fr 
+    }
+
+    @media only screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    @media only screen and (min-width: $large) {
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+}
+
+.productCard{
+    width: 100%;
+    max-width: 13.59rem;
+    box-shadow: 0px 2px 8px 0px #00000022;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 17.813rem;
+    margin-bottom: 2rem;
+
+    .imageWrapper{
+        overflow: hidden;
+    }
+
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .productTitle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.75rem;
+
+        h3{
+            font-size: $text-base;
+            font-weight: 400;
+            max-width: 7.75rem;
+            height: 2.375rem;
+            color: $tercearyBlack;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        span{
+            background: $secondaryBlack;
+            font-size: $text-sm;
+            color: $mainWhite;
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.313rem;
+        }
+    }
+    .productDescription{
+        padding: 0 0.75rem;
+        font-size: $text-xs;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+}
