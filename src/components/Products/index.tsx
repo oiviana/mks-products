@@ -1,15 +1,10 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
+import { getProducts } from "@/services/getProducts";
 
 export default function Products() {
 
-  const {data, isLoading, error} = useQuery<ProductData>({ queryKey: ['products'], queryFn: async () => {
-    const response = await fetch("/api/products");
-    if (!response.ok) {
-      throw new Error('Falha ao carregar os dados');
-    }
-    return response.json();
-  } })
+  const {data, isLoading, error} = useQuery<ProductData>({ queryKey: ['products'], queryFn: getProducts})
 
   if (isLoading) return <div>Carregando...</div>;
 
