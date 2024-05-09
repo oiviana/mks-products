@@ -96,3 +96,15 @@
 
     }
 }
+
+.addToCart{
+    background: $mainBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 1.875rem;
+    color: $mainWhite;
+    text-transform: uppercase;
+    font-weight: 600;
+}
