@@ -6,7 +6,7 @@ export async function GET() {
       "https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=DESC"
     );
     const data = await response.json();
-    return NextResponse.json({ data: data });
+    return NextResponse.json({ data: data, message: "it´s not necessary to use react query because of the server components" });
   } catch (error) {
     return NextResponse.json({ message: "error", error: error });
   }
