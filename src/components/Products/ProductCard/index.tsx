@@ -11,7 +11,7 @@ export default function ProductCard({name, price, description, photo,}:ProductPr
   return (
     <div className={styles.productCard}>
       <div className={styles.imageWrapper}>
-        <Image alt={name} width={230} height={139} src={photo}  style={{objectFit:"contain"}}/>
+        <Image alt={name} width={220} height={139} src={photo}  style={{objectFit:"contain"}}/>
       </div>
       <div className={styles.cardContent}>
         <div className={styles.productTitle}>
