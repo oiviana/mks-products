@@ -8,6 +8,16 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "mks-sistemas.nyc3.digitaloceanspaces.com",
+        port:"",
+       
+      },
+    ],
+  },
 };
 
 export default nextConfig;
