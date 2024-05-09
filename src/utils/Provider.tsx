@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import React, { ReactNode, useCallback, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import  CartProvider  from "@/contexts/CartContext";
 
-interface ProviderProps {
+export interface ProviderProps {
   children: ReactNode;
 }
 
@@ -13,7 +14,9 @@ const Provider: React.FC<ProviderProps> = ({ children }) => {
 
   return (
     <QueryClientProvider client={memoizedQueryClient()}>
-      {children}
+      <CartProvider>
+        {children}
+        </CartProvider>
     </QueryClientProvider>
   );
 };
