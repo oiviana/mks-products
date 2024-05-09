@@ -1,0 +1,35 @@
+@import './src/app/styles/variables.module.scss';
+
+.headerContainer{
+    background: $mainBlue;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+
+
+    .logo{
+        color: #FFFFFF;
+        font-size: $text-base;
+        font-weight: 300;
+
+        span{
+            font-size: $text-xl;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    @media only screen and (min-width: $large) {
+        padding: 0 10rem;
+
+        .logo{
+            font-size: $text-lg;
+        }
+        span{
+            font-size: $text-2xl;
+        }
+    }
+}
