@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/services/getProducts";
 import ProductCard from "./ProductCard";
 import styles from "./styles.module.scss"
+import { ProductData } from "./types";
 
 export default function Products() {
 
