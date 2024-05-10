@@ -53,6 +53,7 @@
     h2 {
         max-width: 10.75rem;
         font-size: $text-base;
+        margin-left: 1.5rem;
 
         @media only screen and (min-width: $tablet) {
             font-size: $text-xl;
@@ -86,6 +87,16 @@
 
 
 
+}
+
+.emptyCart{
+    display: flex;
+ 
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .cartContent::-webkit-scrollbar {
