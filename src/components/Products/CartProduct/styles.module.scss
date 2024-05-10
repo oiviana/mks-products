@@ -47,12 +47,13 @@
 }
 
 .productTitle{
-    max-width: 7.188rem;
+    max-width: 5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    font-size: $text-sm;
 }
 
 .quantityLabel{
@@ -85,6 +86,23 @@
 }
 
 .price{
-    font-size: $text-sm;
+    font-size: $text-xs;
     font-weight: 700;
+}
+
+@media only screen and (min-width: $tablet) {
+    .productTitle{
+        max-width: 7.188rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: $text-base;
+    }
+
+    .price{
+        font-size: $text-sm;
+        font-weight: 700;
+    }
 }
