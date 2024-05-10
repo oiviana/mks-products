@@ -7,14 +7,14 @@ interface ProductData {
 interface ProductProps {
   id: number;
   name: string;
-  brand: string;
-  description: string;
+  brand?: string;
+  description?: string;
   photo: string;
   price: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
-type CartProductProps =  {
+export type CartProductProps =  {
   quantity: number;
-} & Pick<ProductProps, "price" | "name" | "photo">; ;
+} & Pick<ProductProps, "price" | "name" | "photo" | "id">; ;
