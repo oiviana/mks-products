@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "../styles.module.scss";
 import AddToCart from "@/components/Cart/AddToCart";
+import { ProductProps } from "../types";
 
-export default function ProductCard({name, price, description, photo,}:ProductProps){
+export default function ProductCard({name, price, description, photo,id}:ProductProps){
     const priceFormatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
@@ -19,7 +20,12 @@ export default function ProductCard({name, price, description, photo,}:ProductPr
           <span> {priceFormatter.format(Number(price))}</span>
         </div>
         <span className={styles.productDescription}>{description}</span>
-        <AddToCart />
+        <AddToCart 
+        name={name} 
+        id={id}
+        photo={photo}
+        price={price}
+        />
       </div>
     </div>
   );
