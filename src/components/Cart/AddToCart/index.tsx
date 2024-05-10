@@ -4,7 +4,7 @@ import styles from "../styles.module.scss";
 export default function AddToCart() {
   return (
     <button className={styles.addToCart}>
-      <LuShoppingBag size={20} />
+      <LuShoppingBag size={14} />
       comprar
     </button>
   );
