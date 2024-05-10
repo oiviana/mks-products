@@ -28,6 +28,7 @@
     overflow: hidden;
     height: 17.813rem;
     margin-bottom: 2rem;
+    cursor: pointer;
 
     .imageWrapper{
         overflow: hidden;
@@ -36,7 +37,7 @@
     .cardContent{
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.6rem;
     }
 
     .productTitle{
