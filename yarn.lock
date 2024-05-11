@@ -541,6 +541,11 @@ chalk@^4.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
+classnames@^2.3.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
+
 client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
@@ -1940,6 +1945,13 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-shimmer-effects@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-shimmer-effects/-/react-shimmer-effects-1.0.3.tgz#74513c92e5ec470ddab2c943a607efdaa1e6db28"
+  integrity sha512-UQw+dujUTUtpIsorHPrYlKQ1YdKUwHIOd4vReW0VOPauQ+nuRdyuwFM7Q6qL75WML3HvA8DB7rpdJGuxB9cZ5A==
+  dependencies:
+    classnames "^2.3.1"
 
 react@^18:
   version "18.3.1"
