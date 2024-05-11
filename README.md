@@ -1,11 +1,12 @@
-## <p align="center">
+<p align="center">
   <img src="https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9") alt="MKS Logo"/>
 </p>
----
+
 <p align="center">
 This is the project created by Lucas Viana for the MKS Systems challenge, it is built primarily in the React ecosystem
 </p>
 
+# How to install the Project?
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
