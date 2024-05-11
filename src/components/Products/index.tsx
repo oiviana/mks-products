@@ -4,12 +4,22 @@ import { getProducts } from "@/services/getProducts";
 import ProductCard from "./ProductCard";
 import styles from "./styles.module.scss"
 import { ProductData } from "./types";
+import { ShimmerPostList } from "react-shimmer-effects";
+import useDimensions from "@/hooks/useDimensions";
 
 export default function Products() {
 
   const {data, isLoading, error} = useQuery<ProductData>({ queryKey: ['products'], queryFn: getProducts})
-
-  if (isLoading) return <div>Carregando...</div>;
+  const device = useDimensions();
+  if (isLoading) return (
+    <div className={styles.skeletonContainer}>
+      <ShimmerPostList postStyle="STYLE_THREE" 
+      col={device === 'phone' ? 1 : device === 'tablet' ? 2 : device === 'tablet-large' ? 3 : 4} 
+      row={2} 
+      gap={30} 
+      imageHeight={250}/>
+    </div>
+  );
 
   if (error) return <div>Error: {error.message}</div>;
 

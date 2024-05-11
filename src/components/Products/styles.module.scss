@@ -1,12 +1,22 @@
 @import './src/app/styles/variables.module.scss';
 
-.productsGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+.productsGrid, .skeletonContainer{
     width: 100%;
     max-width: 58.625rem;
+   
+}
+
+.skeletonContainer{
+    padding: 0.5rem;
+    margin: calc((100vh - 585px) / 2) auto;
+}
+
+.productsGrid{
+    display: grid;
     margin: calc((100vh - 650px) / 2) auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+ 
 
     @media only screen and (min-width: 460px) {
         grid-template-columns: 1fr 1fr 
