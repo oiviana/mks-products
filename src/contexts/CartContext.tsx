@@ -23,7 +23,7 @@ export const CartContext = createContext<CartContextType | null>(null);
 const CartProvider: React.FC<ProviderProps> = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartProductProps[]>([]);
-  console.log("items", cartItems);
+
   const openCart = () => {
     setIsCartOpen(true);
   };
