@@ -17,7 +17,8 @@ export default function Cart() {
     >
       <div className={styles.cartHeader}>
         <h2>Carrinho de compras</h2>
-        <button onClick={closeCart}>
+        <button onClick={closeCart}
+        aria-label="Fechar carrinho">
           <IoClose size={25} />
         </button>
       </div>
