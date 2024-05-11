@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { useCart } from "@/contexts/CartContext";
 import { IoClose } from "react-icons/io5";
 import CartProduct from "../Products/CartProduct";
+import { motion } from "framer-motion";
 
 export default function Cart() {
   const { isCartOpen, closeCart, cartItems, totalPrice } = useCart();
@@ -42,6 +43,10 @@ export default function Cart() {
               />
             ))}
           </div>
+          <motion.div
+      animate={{y: [300, 0]}}
+      transition={{ ease: "easeOut", duration: 0.3 }}
+    >
           <div className={styles.cartFooter}>
             <div className={styles.cartFooterTotal}>
               <span>Total:</span>
@@ -49,6 +54,7 @@ export default function Cart() {
             </div>
             <button className={styles.cartBuy}>Finalizar Compra</button>
           </div>
+          </motion.div>
         </>
       )}
     </div>
