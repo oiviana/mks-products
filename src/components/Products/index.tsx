@@ -4,6 +4,7 @@ import { getProducts } from "@/services/getProducts";
 import ProductCard from "./ProductCard";
 import styles from "./styles.module.scss"
 import { ProductData } from "./types";
+// @ts-ignore
 import { ShimmerPostList } from "react-shimmer-effects";
 import useDimensions from "@/hooks/useDimensions";
 
