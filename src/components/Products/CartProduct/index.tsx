@@ -56,7 +56,7 @@ export default function CartProduct({
             </button>
           </div>
         </div>
-        <span className={styles.price}>R$ {price}</span>
+        <span className={styles.price}>R${price.replace(/\.00$/, '')}</span>
       </div>
     </div>
   );
