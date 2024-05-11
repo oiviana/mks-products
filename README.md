@@ -1,24 +1,10 @@
 <p align="center">
   <img src="https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9") alt="MKS Logo"/>
 </p>
-ˋˋˋ
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+<p align="center">
+This is the project created by Lucas Viana for the MKS Systems challenge, it is built primarily in the React ecosystem
+</p>
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
