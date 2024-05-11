@@ -25,6 +25,7 @@ export default function CartProduct({
         <button
           className={styles.removeProduct}
           onClick={() => removeItemToCart(id, false)}
+          aria-label="Remover item do carrinho"
         >
           <IoClose size={12} />
         </button>
@@ -44,11 +45,13 @@ export default function CartProduct({
             <button
               className={styles.minus}
               onClick={() => removeItemToCart(id, true)}
+              aria-label="Diminuir quantidade do produto"
             >
               -
             </button>
             <span>{quantity}</span>
-            <button className={styles.plus} onClick={() => addItemToCart(id, name, photo, price)}>
+            <button className={styles.plus} onClick={() => addItemToCart(id, name, photo, price)}
+            aria-label="Aumentar quantidade do produto">
               +
             </button>
           </div>
