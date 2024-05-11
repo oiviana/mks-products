@@ -14,11 +14,12 @@ export default function Cart() {
       className={`${styles.cartWrapper} ${
         isCartOpen ? styles.open : styles.close
       } `}
+      data-testid="cart"
     >
       <div className={styles.cartHeader}>
         <h2>Carrinho de compras</h2>
         <button onClick={closeCart}
-        aria-label="Fechar carrinho">
+        aria-label="Fechar carrinho" data-testid='close-cart-button'>
           <IoClose size={25} />
         </button>
       </div>
@@ -29,7 +30,7 @@ export default function Cart() {
         </div>
       ) : (
         <>
-          <div className={styles.cartContent}>
+          <div className={styles.cartContent} data-testid="cart-products">
             {cartItems.map((item) => (
               <CartProduct
                 key={item.id}

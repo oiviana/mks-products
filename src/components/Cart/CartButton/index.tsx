@@ -8,7 +8,7 @@ export default function CartButton() {
   const totalItemsCount = totalItems();
 
   return (
-    <button className={styles.openCart} onClick={openCart} aria-label="Abrir carrinho">
+    <button className={styles.openCart} onClick={openCart} aria-label="Abrir carrinho" data-testid="minicart-button">
       <FaShoppingCart />{totalItemsCount}
     </button>
   );

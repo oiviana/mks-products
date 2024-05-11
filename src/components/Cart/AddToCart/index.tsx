@@ -12,6 +12,7 @@ export default function AddToCart(productData: ProductProps) {
       className={styles.addToCart}
       onClick={() => addItemToCart(id, name, photo, price)}
       aria-label="Adicionar produto ao carrinho"
+      data-testid="add-to-cart"
     >
       <LuShoppingBag size={14} />
       comprar
