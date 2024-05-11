@@ -1,8 +1,7 @@
-![image](https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9)
 <p align="center">
   <img src="https://github.com/oiviana/mks-products/assets/76710272/3a21aa71-ab0c-4ce7-ad2d-079c82e991f9") alt="MKS Logo"/>
 </p>
-
+ˋˋˋ
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
