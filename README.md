@@ -8,6 +8,7 @@ This is the project created by Lucas Viana for the MKS Systems challenge, it is 
 
 # How to install the Project?
 - Clone the repo
+- Run **yarn** or **npm** in the root of the project
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
