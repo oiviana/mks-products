@@ -21,7 +21,7 @@ export default function CartProduct({
   return (
     <motion.div
       animate={{ y: 40 }}
-      transition={{ ease: "easeOut", duration: 0.3 }}
+      transition={{ ease: "easeOut", duration: 0.7 }}
     >
       <div className={styles.productWrapper}>
         <div className={styles.productContent}>

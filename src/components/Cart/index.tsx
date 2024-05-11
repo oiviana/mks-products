@@ -4,18 +4,35 @@ import { useCart } from "@/contexts/CartContext";
 import { IoClose } from "react-icons/io5";
 import CartProduct from "../Products/CartProduct";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Cart() {
   const { isCartOpen, closeCart, cartItems, totalPrice } = useCart();
 
   const cartTotalPrice = totalPrice()
+  const cartRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: TouchEvent | MouseEvent) {
+      if (cartRef.current && event.target instanceof Node && !cartRef.current.contains(event.target)) {
+       closeCart();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [closeCart]);
 
   return (
+    <>
     <div
       className={`${styles.cartWrapper} ${
         isCartOpen ? styles.open : styles.close
       } `}
       data-testid="cart"
+      ref={cartRef}
     >
       <div className={styles.cartHeader}>
         <h2>Carrinho de compras</h2>
@@ -58,5 +75,13 @@ export default function Cart() {
         </>
       )}
     </div>
+    {isCartOpen && (
+        <div
+          className={styles.overlay}
+          onClick={closeCart}
+          data-testid="overlay"
+        ></div>
+      )}
+   </>
   );
 }
