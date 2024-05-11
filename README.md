@@ -13,17 +13,19 @@ This is the project created by Lucas Viana for the MKS Systems challenge, it is 
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# Stack:
+- Next 14
+- Saas
+- React Query
+- Shimmer Skeleton
+- Typescript
+- FramerMotion
+- Jest and Test Library
 
-To learn more about Next.js, take a look at the following resources:
+ # Evidences:
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/3512cee5-1692-4b6c-9ee5-49852f1736cd)
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/c2e4662b-7440-42f8-854e-5c08c42aede2)
+ ![image](https://github.com/oiviana/mks-products/assets/76710272/1d8f01c6-c384-4f45-baed-449204329c2a)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ # Deploy:
