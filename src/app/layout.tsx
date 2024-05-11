@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./styles/globals.scss";
 import Provider from "@/utils/Provider";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const montSerrat = Montserrat({ subsets: ["latin"], display:"swap" });
 
 export const metadata: Metadata = {
@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montSerrat.className}>
         <Provider>{children}</Provider>
+        <SpeedInsights/>
       </body>
     </html>
   );
